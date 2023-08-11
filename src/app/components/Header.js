@@ -3,14 +3,15 @@ import ToggleTheme from "./ToggleTheme";
 
 export default function Header(){
     return(
-        <div className="flex justify-end gap-[79px] pt-[39px]">
-            <div className="flex align-center gap-[40px]">
+
+        <div className=" flex justify-end items-center md:gap-10 xl:gap-20 md:pt-5 xl:pt-10 mr-10">
+            <ul className="flex md:text-base xl:text-xl gap-10">
                 <NavigationButton title="Home" address='/' />
                 <NavigationButton title="About" address='/about' />
                 <NavigationButton title="Gallery" address='/gallery' />
                 <NavigationButton title="Contact" address='/contact' />
-            </div>
-            <div className="block w-[35px] h-[35px] mr-[41px]">
+            </ul>
+            <div>
                 <ToggleTheme />
             </div>
         </div>

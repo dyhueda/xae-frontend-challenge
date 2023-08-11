@@ -11,6 +11,9 @@ module.exports = {
       backgroundImage: {
         'texture' : "url('https://i.postimg.cc/HsRVpMDN/texture2.png')"
       },
+      backgroundPosition:{
+        'more-right' : 'top 30% right 500%'
+      }
 
     },
   },
