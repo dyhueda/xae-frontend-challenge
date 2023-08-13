@@ -7,8 +7,10 @@ import MenuIcon from "./icons/MenuIcon";
 import TwitterIcon from "./icons/TwitterIcon";
 
 
+
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+
   const handleOpen = () => setIsOpen((prev) => !prev);
   return (
     <div className="flex p-5 justify-between">
@@ -23,12 +25,12 @@ export default function Menu() {
           <div className="absolute right-1/2 z-50 rounded bg-[#2C4550]/90 p-8 animate-fade-down animate-once animate-duration-1000 animate-ease-out">
             <div className="flex flex-col gap-4">
             <ul className="flex flex-col gap-4" >
-              <NavigationButton title="Home" address="/" />
-              <NavigationButton title="About" address="/about" />
-              <NavigationButton title="Gallery" address="/gallery" />
-              <NavigationButton title="Contact" address="/contact" />
+              <NavigationButton title="Home" address="/"/>
+              <NavigationButton title="About" address="/About" />
+              <NavigationButton title="Gallery" address="/Gallery" />
+              <NavigationButton title="Contact" address="/Contact" />
             </ul>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-4 ">
               <FacebookIcon />
               <InstagramIcon />
               <TwitterIcon />

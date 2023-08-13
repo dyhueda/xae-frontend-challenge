@@ -24,7 +24,7 @@ export default function Footer() {
             <AnimatedButton button={<ArrowRightIcon />} />
           </span>
         </div>
-        <div className="xl:flex flex-col w-max-5/12 animate-shake hidden">
+        <div className="xl:flex flex-col w-max-5/12 hidden">
           <h2 className="text-2xl font-bold  pb-4">Footprint</h2>
           <p className="text-lg ">Lorem ipsum dolor sit amet, consectetur</p>
           <span className="flex justify-end p-2">
