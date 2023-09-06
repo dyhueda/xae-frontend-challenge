@@ -7,6 +7,6 @@ export default function NavigationButton(props) {
 
     
   return (
-        <button className="" onClick={()=> router.push(props.address)} >{props.title}</button>
+        <button className={`${props.page === props.title ? 'border-b-2 pb-1' : ''  }`} onClick={()=>{props.setPage(props.title); router.push(props.address)}} >{props.title}</button>
   );
 }
